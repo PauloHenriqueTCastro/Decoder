@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Decoder</title>
+</head>
+
+<body>
+    <header>
+        <h1>Decoder</h1>
+    </header>
+    <div class="container">
+        <div class="container__decoder">
+            <textarea placeholder="Digite seu texto" id="textToDecode"></textarea>
+            <span>Apenas letras minúsculas e sem acento.</span>
+            <div class="container__decoder__buttons">
+                <button onclick="decoderButton()">Decodificar</button>
+                <button onclick="encoderButton()">Codificar</button>
+            </div>
+        </div>
+        <div class="container__noTextFound" id="container__noTextFound">
+            <img src="./assets/High quality products 1 1.svg" alt="">
+            <h4>Nenhuma mensagem encontrada</h4>
+            <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+        </div>
+        <div class="container__copy" id="container__copy">
+            <p id="textDecoded"></p>
+            <button onclick="copyTextButton()">Copiar</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
